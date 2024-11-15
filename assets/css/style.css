@@ -1,0 +1,76 @@
+/* custom styles */
+:root {
+    --primary-bg-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: var(--primary-bg-color);
+}
+
+/* site header */
+header{
+    text-align: center;
+    background-color: #8a2be2;
+    padding:20px;
+}
+
+/* nav styles */
+
+/* nav bar links */
+#nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+    display:block;
+    text-align: center;
+    float: left;
+}
+/* nav bar on hover */
+#nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* last nav bar a element positioned to the right side */
+#nav-bar a:last-child{
+    float: right;
+}
+
+#nav-bar {
+  overflow: hidden;
+  background-color:#e28a2b;
+}
+
+/* main */
+#main-parent {
+    display: grid;
+    
+
+    grid-template-areas: 
+    'article-1 article-1 sidebar'
+    'article-2 article-2 sidebar';
+}
+
+/* article-1 */
+#article-1 {
+    grid-area: article-1;
+}
+/* article-2 */
+#article-2 {
+    grid-area: article-2;
+}
+/* side */
+#side {
+    grid-area: sidebar;
+    padding-left: 8px;
+}
+/* footer */
+footer {
+    text-align: center;
+    background-color: #6dd010;
+    padding:20px;
+    margin-top: 20px;
+}
