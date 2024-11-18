@@ -17,13 +17,18 @@ header{
     background-color: #8a2be2;
     padding:20px;
 }
+/* could change to simply a elements if all links share same style */
+#nav-bar a, #side a {
+    text-decoration: none;
+    color: white;
+}
 
 /* nav styles */
 
 /* nav bar links */
 #nav-bar a {
-    text-decoration: none;
-    color: white;
+    /* text-decoration: none;
+    color: white; */
     padding: 14px 16px;
     display:block;
     text-align: center;
@@ -47,8 +52,6 @@ header{
 /* main */
 #main-parent {
     display: grid;
-    
-
     grid-template-areas: 
     'article-1 article-1 sidebar'
     'article-2 article-2 sidebar';
@@ -67,6 +70,40 @@ header{
     grid-area: sidebar;
     padding-left: 8px;
 }
+
+#side-image{
+    /* If the max-width property is set to 100%, the image will scale down if it has to, 
+    but never scale up to be larger than its original size */
+    max-width: 100%;
+    height: auto;
+}
+
+.dot {
+  /* create dot */
+  height: 5px;
+  width: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  /* position centered */
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#side-links { 
+    text-align: center;
+    border-top: solid thin white;
+    padding-top: 5px;
+}
+
+
+
+
+
+
+
 /* footer */
 footer {
     text-align: center;
@@ -74,3 +111,6 @@ footer {
     padding:20px;
     margin-top: 20px;
 }
+
+
+
