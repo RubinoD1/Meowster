@@ -16,7 +16,9 @@ header{
     text-align: center;
     background-color: #8a2be2;
     padding:20px;
+    /* line-height: 10px; */
 }
+
 /* could change to simply a elements if all links share same style */
 #nav-bar a, #side a {
     text-decoration: none;
@@ -57,6 +59,18 @@ header{
     'article-2 article-2 sidebar';
 }
 
+/* aricles */
+.article-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+}
+
+.article-title {
+    text-align: center;
+}
+
 /* article-1 */
 #article-1 {
     grid-area: article-1;
@@ -94,14 +108,24 @@ header{
 
 #side-links { 
     text-align: center;
-    border-top: solid thin white;
-    padding-top: 5px;
+    border-bottom: solid thin white;
+    padding-bottom: 5px;
+    font-weight: bold;
 }
 
+#about-link{
+    font-weight: bold;
+    text-decoration: underline white;
+}
 
+#social-media-links {
+  text-align: center;
+  margin-top: 10px;
+}
 
-
-
+.social-media-icon {
+    font-size: 25px;
+}
 
 
 /* footer */
@@ -110,6 +134,7 @@ footer {
     background-color: #6dd010;
     padding:20px;
     margin-top: 20px;
+    color: black;
 }
 
 
