@@ -59,6 +59,12 @@ header{
     'article-2 article-2 sidebar';
 }
 
+main article {
+    /* margin:auto - remaining space will be split equally between the two margins */
+    margin: auto;
+    width: 90%;
+}
+
 /* aricles */
 .article-img {
     display: block;
@@ -67,8 +73,19 @@ header{
     /* width: 50%; */
 }
 
-.article-title {
+.article-title, .article-date {
     text-align: center;
+}
+
+/* article btn */
+.view-post-btn {
+    font-size: 25px;
+    width: 100%;
+    background-color: #1ad010ea;
+}
+
+.view-post-btn:hover {
+    background-color: #158934;
 }
 
 /* article-1 */
@@ -131,10 +148,11 @@ header{
 /* footer */
 footer {
     text-align: center;
-    background-color: #6dd010;
+    /* bg shared with nav -unify into shared if this remains true */
+    background-color: #e28a2b;
     padding:20px;
     margin-top: 20px;
-    color: black;
+    /* color: black; */
 }
 
 
