@@ -144,6 +144,48 @@ main article {
     font-size: 25px;
 }
 
+/* login form */
+#login {
+    border: solid white;
+    text-align: center;
+    /* size adjustment */
+    margin: 30px auto 0px auto;
+    width: 90%;
+}
+
+#login-title {
+    font-weight: bold;
+}
+
+#login textarea {
+    width: 75%;
+    margin-bottom: 10px;
+    border: solid white;
+    font-size: 15px;
+}
+
+#login textarea::placeholder {
+    color: white;
+    /* Firefox adds a lower opacity to the placeholder, so we use opacity: 1 to fix this. */
+    opacity: 1; /* Firefox */
+}
+/* remember me checkbox */
+#login input {
+    margin-left: 15px;
+}
+
+#login input, #login label {
+    float: left;
+}
+
+/* sign in btn */
+#login button {
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 
 /* footer */
 footer {
