@@ -15,8 +15,34 @@ body {
 header{
     text-align: center;
     background-color: #8a2be2;
-    padding:20px;
-    /* line-height: 10px; */
+    padding:5px;
+}
+
+#header-parent {
+    display: grid;
+    grid-template-areas: 
+    'logo-left slogan slogan logo-right';
+    gap: 0px;
+}
+
+.site-logo {
+    width:170px;
+    height:170px;
+}
+
+#site-logo-left {
+    grid-area: logo-left;
+}
+
+#site-logo-right {
+    grid-area: logo-right;
+    transform: rotateY(180deg);
+}
+
+#site-header {
+    grid-area: slogan;
+    font-size: 25px;
+    font-family: monospace, sans-serif, 'Times New Roman';
 }
 
 /* could change to simply a elements if all links share same style */
