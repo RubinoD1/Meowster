@@ -217,11 +217,45 @@ main article {
 footer {
     text-align: center;
     /* bg shared with nav -unify into shared if this remains true */
-    background-color: #e28a2b;
+    /* background-color: #e28a2b; */
     padding:20px;
     margin-top: 20px;
     /* color: black; */
+    border-top: solid white;
+    display: grid;
+    grid-template-areas: 
+    'subscribe column-2 column-3 column-4'
+    'subscribe column-2 column-3 column-4'
+    'footer-nav footer-nav footer-nav footer-nav'
+    'copyright copyright copyright copyright';
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+}
 
+#subscribe-parent {
+    grid-area: subscribe;
+}
 
+#footer-col-2 {
+    grid-area: column-2;
+}
+
+#footer-col-3 {
+    grid-area: column-3;
+}
+#footer-col-4 {
+    grid-area: column-4;
+}
+
+#footer-nav {
+    grid-area: footer-nav;
+    background-color: #f46219f8;
+}
+
+#footer-copyright {
+    grid-area: copyright;
+    background-color: #e22b7aa2;
+}
