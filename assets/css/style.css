@@ -11,6 +11,12 @@ body {
     background-color: var(--primary-bg-color);
 }
 
+textarea::placeholder {
+    color: white;
+    /* Firefox adds a lower opacity to the placeholder, so we use opacity: 1 to fix this. */
+    opacity: 1; /* Firefox */
+}
+
 /* site header */
 header{
     text-align: center;
@@ -190,11 +196,11 @@ main article {
     font-size: 15px;
 }
 
-#login textarea::placeholder {
-    color: white;
+/* #login textarea::placeholder {
+    color: white; */
     /* Firefox adds a lower opacity to the placeholder, so we use opacity: 1 to fix this. */
-    opacity: 1; /* Firefox */
-}
+    /* opacity: 1; 
+} */
 /* remember me checkbox */
 #login input {
     margin-left: 15px;
@@ -234,9 +240,22 @@ footer a {
     text-decoration: none;
     color: white;
 }
-
+/* subscribe column */
 #subscribe-parent {
     grid-area: subscribe;
+}
+/* check for duplicate with other text areas */
+#email-text-area {
+    width: 35%;
+    margin-bottom: 10px;
+    border: solid white 5px;
+    font-size: 15px;
+}
+
+#subscribe-btn {
+    padding: 6px 4px 1px 4px;
+    font-size: 18px;
+    font-family:  sans-serif, 'Times New Roman', serif;
 }
 
 #footer-col-2 {
@@ -246,16 +265,39 @@ footer a {
 #footer-col-3 {
     grid-area: column-3;
 }
+
 #footer-col-4 {
     grid-area: column-4;
 }
 
+.footer-link:hover, #footer-nav a:hover {
+    color: #e28a2b;
+    font-weight: bold;
+}
+
 #footer-nav {
     grid-area: footer-nav;
-    background-color: #f46219f8;
+    padding: 10px 5px;
+    border-top: solid white 3px;
+    border-bottom: solid white 1px;
 }
+
+#footer-nav a {
+    padding-right: 15px;
+    float: left;
+}
+
+#footer-nav a:first-child {
+    padding-left: 20px;
+}
+
+#footer-nav a:last-child {
+    padding-right: 20px;
+    float: right;
+    font-weight: bold;
+}
+
 
 #footer-copyright {
     grid-area: copyright;
-    background-color: #e22b7aa2;
 }
