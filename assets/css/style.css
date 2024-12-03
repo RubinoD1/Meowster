@@ -97,7 +97,6 @@ header{
     color: black;
 }
 
-
 /* main */
 #main-parent {
     display: grid;
@@ -232,6 +231,30 @@ main article {
     margin-bottom: 5px;
     font-weight: bold;
 }
+
+/* latest articles */
+#latest-articles {
+    margin-top: 40px;
+}
+
+#latest-articles h3 {
+    text-align: center;
+}
+
+.latest-articles-image {
+    width: 24.99999%;
+    float:left;
+    margin-right: 7px;
+}
+
+.latest-article {
+    padding-bottom: 10px;
+    background-color: rgba(46, 52, 57, 0.5);
+}
+/* check color repeat with footer nav links */
+.latest-articles-text:hover {
+   color: #e28a2b;
+}  
 
 
 /* footer */
