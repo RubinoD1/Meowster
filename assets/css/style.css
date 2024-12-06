@@ -1,6 +1,7 @@
 /* custom styles */
 :root {
     --primary-bg-color: black;
+    --font-color: white;
 }
 
 * {
@@ -9,16 +10,21 @@
   
 body {
     background-color: var(--primary-bg-color);
+    color: var(--font-color);
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
 }
 
 textarea::placeholder {
-    color: white;
     /* Firefox adds a lower opacity to the placeholder, so we use opacity: 1 to fix this. */
-    opacity: 1; /* Firefox */
+    opacity: 1; 
 }
 
 /* site header */
-header{
+header {
     text-align: center;
     background-color: #8a2be2;
     padding:5px;
@@ -51,18 +57,10 @@ header{
     font-family: monospace, sans-serif, 'Times New Roman';
 }
 
-/* could change to simply a elements if all links share same style */
-#nav-bar a, #side a {
-    text-decoration: none;
-    color: white;
-}
-
 /* nav styles */
 
 /* nav bar links */
 #nav-bar a {
-    /* text-decoration: none;
-    color: white; */
     padding: 14px 16px;
     display:block;
     float: left;
@@ -210,12 +208,6 @@ main article {
     font-size: 15px;
 }
 
-/* #login textarea::placeholder {
-    color: white; */
-    /* Firefox adds a lower opacity to the placeholder, so we use opacity: 1 to fix this. */
-    /* opacity: 1; 
-} */
-/* remember me checkbox */
 #login input {
     margin-left: 15px;
 }
@@ -239,6 +231,7 @@ main article {
 
 #latest-articles h3 {
     text-align: center;
+    text-decoration: underline white;
 }
 
 .latest-articles-image {
@@ -249,22 +242,18 @@ main article {
 
 .latest-article {
     padding-bottom: 10px;
-    background-color: rgba(46, 52, 57, 0.5);
+    float:right;
 }
 /* check color repeat with footer nav links */
 .latest-articles-text:hover {
    color: #e28a2b;
 }  
 
-
 /* footer */
 footer {
     text-align: center;
-    /* bg shared with nav -unify into shared if this remains true */
-    /* background-color: #e28a2b; */
     padding:20px;
     margin-top: 20px;
-    /* color: black; */
     border-top: solid white;
     display: grid;
     grid-template-areas: 
@@ -274,10 +263,6 @@ footer {
     'copyright copyright copyright copyright';
 }
 
-footer a {
-    text-decoration: none;
-    color: white;
-}
 /* subscribe column */
 #subscribe-parent {
     grid-area: subscribe;
@@ -335,7 +320,22 @@ footer a {
     font-weight: bold;
 }
 
-
 #footer-copyright {
     grid-area: copyright;
 }
+
+/* media breakpoints */
+/* phone */
+/* Extra small devices (phones, 600px and down) */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .article-img {
+        width: 100%;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
