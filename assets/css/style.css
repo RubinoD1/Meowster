@@ -326,7 +326,82 @@ footer {
 
 /* media breakpoints */
 /* phone */
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices */
+@media only screen and (max-width: 375px) {
+    /* header */
+    .site-logo {
+        width: 0px; /* hide nav logos on phones */
+    }
+    
+    header {
+        padding: 0px;
+    }
+
+    #site-header {
+        font-size: 18px;
+    }
+    
+    #nav-bar {
+        background-color: black;
+    }
+
+    #nav-bar a {
+        padding: 8px 12px 4px 4px;
+        text-align: center;
+        float: none;
+    }
+
+    #search-btn {
+        margin-right: 50px;
+    }
+
+    #search-input {
+        background-color: white;
+    }
+
+    /* side */
+    #side-image {
+        margin-top: 10px;
+        border-top: solid thin white;
+    }
+
+
+    #main-parent {
+        grid-template-areas: 
+        'sidebar'
+        'article-1'
+        'article-2';
+    }
+    
+    /* footer */
+    footer {
+        padding:0px;
+        grid-template-areas: 
+        'subscribe subscribe subscribe'
+        'column-3 column-2 column-4'
+        'footer-nav footer-nav footer-nav'
+        'copyright copyright copyright';
+    }
+    
+    #email-text-area {
+        width: 75%;
+    }
+
+    #footer-nav {
+        margin-top: 10px;
+        padding: 10px 5px;
+        border-top: solid white 1px;
+    }
+
+    #footer-nav a{
+        margin-bottom: 10px;
+    }
+
+    #footer-nav a:last-child {
+      margin-bottom: 0px;
+    }
+  
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
@@ -336,6 +411,11 @@ footer {
     .article-img {
         width: 100%;
     }
+
+   footer h3 {
+    font-size: 15px;
+    text-decoration: underline white;
+   }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
