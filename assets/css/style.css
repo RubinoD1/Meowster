@@ -114,7 +114,6 @@ main article {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* width: 50%; */
 }
 
 .article-title, .article-date {
@@ -326,8 +325,7 @@ footer {
 
 /* media breakpoints */
 /* phone */
-/* Extra small devices */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 750px) {
     /* header */
     .site-logo {
         width: 0px; /* hide nav logos on phones */
@@ -364,7 +362,6 @@ footer {
         margin-top: 10px;
         border-top: solid thin white;
     }
-
 
     #main-parent {
         grid-template-areas: 
@@ -403,11 +400,15 @@ footer {
   
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones -- fixes nav search bar position */
+@media (min-width: 379px) and (max-width: 750px){
+    #search-btn {
+        margin-right: 0px;
+    }
+}
 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+/* Medium devices (landscape tablets, 750px and up) */
+@media only screen and (max-width: 1200px) {
     .article-img {
         width: 100%;
     }
@@ -418,4 +419,3 @@ footer {
    }
 } 
 
-/* Large devices (laptops/desktops, 992px and up) */
