@@ -36,8 +36,10 @@ Phone Layout
 
 <p align="center">
   <img src="./assets/images/screenshots/Phone-1.png" />
-  <img src="./assets/images/screenshots/Phone-2.png" />
 </p>
 
+<p align="center">
+  <img src="./assets/images/screenshots/Phone-2.png" />
+</p>
 
 
