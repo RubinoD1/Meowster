@@ -1,7 +1,7 @@
 # Meowster: News Blog Template 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 
 
-Live Page: 
+Live Page: https://rubinod1.github.io/Meowster/
 
 GitHub Repo: https://github.com/RubinoD1/Meowster
 
@@ -33,7 +33,11 @@ Tablet Layout
 Phone Layout
 </div>
 <br>
-   
-![Phone](./assets/images/screenshots/Phone-1.png)
 
-![Phone](./assets/images/screenshots/Phone-2.png)
+<p align="center">
+  <img src="./assets/images/screenshots/Phone-1.png" />
+  <img src="./assets/images/screenshots/Phone-2.png" />
+</p>
+
+
+
