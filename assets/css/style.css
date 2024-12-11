@@ -1,7 +1,10 @@
 /* custom styles */
 :root {
-    --primary-bg-color: black;
-    --font-color: white;
+    --primary-bg-color: #000000;
+    --header-bg-color: #8a2be2;
+    --navbar-bg-color: #e28a2b;
+    --font-color: #ffffff;
+    --hover-text-color: #e28a2b;
 }
 
 * {
@@ -17,6 +20,10 @@ a {
     color: var(--font-color);
     text-decoration: none;
 }
+/* text color change on hover */
+.hover-text:hover {
+    color: var(--hover-text-color);
+}
 
 textarea::placeholder {
     /* Firefox adds a lower opacity to the placeholder, so we use opacity: 1 to fix this. */
@@ -26,7 +33,7 @@ textarea::placeholder {
 /* site header */
 header {
     text-align: center;
-    background-color: #8a2be2;
+    background-color: var(--header-bg-color);
     padding:5px;
 }
 
@@ -68,12 +75,12 @@ header {
 /* nav bar on hover */
 #nav-bar a:hover {
     background-color: #ddd;
-    color: black;
+    color: #000000;
 }
 
 #nav-bar {
     overflow: hidden;
-    background-color:#e28a2b;
+    background-color:var(--navbar-bg-color);
 }
 /* nav search */
 #nav-search {
@@ -92,7 +99,7 @@ header {
 #search-input {
     padding-left: 20px;
     background-color: #faebd7;
-    color: black;
+    color: #000000;
 }
 
 /* main */
@@ -124,11 +131,11 @@ main article {
 .view-post-btn {
     font-size: 25px;
     width: 100%;
-    background-color: #1ad010ea;
+    background-color: #ff9800;
 }
 
 .view-post-btn:hover {
-    background-color: #158934;
+    background-color: #ffffffda;
 }
 
 /* article-1 */
@@ -168,14 +175,18 @@ main article {
 
 #side-links { 
     text-align: center;
-    border-bottom: solid thin white;
+    border-bottom: solid thin #ffffff;
     padding-bottom: 5px;
     font-weight: bold;
 }
 
 #about-link{
     font-weight: bold;
-    text-decoration: underline white;
+    text-decoration: underline #ffffff;
+}
+
+#about-link:hover {
+    text-decoration: underline var(--hover-text-color);
 }
 
 #social-media-links {
@@ -189,7 +200,7 @@ main article {
 
 /* login form */
 #login {
-    border: solid white;
+    border: solid #ffffff;
     text-align: center;
     /* size adjustment */
     margin: 30px auto 0px auto;
@@ -203,7 +214,7 @@ main article {
 #login textarea {
     width: 75%;
     margin-bottom: 10px;
-    border: solid white;
+    border: solid #ffffff;
     font-size: 15px;
 }
 
@@ -223,6 +234,10 @@ main article {
     font-weight: bold;
 }
 
+#login button:hover, #subscribe-btn:hover {
+    background-color: #f0ffff;
+}
+
 /* latest articles */
 #latest-articles {
     margin-top: 40px;
@@ -230,7 +245,7 @@ main article {
 
 #latest-articles h3 {
     text-align: center;
-    text-decoration: underline white;
+    text-decoration: underline #ffffff;
 }
 
 .latest-articles-image {
@@ -243,17 +258,13 @@ main article {
     padding-bottom: 10px;
     float:right;
 }
-/* check color repeat with footer nav links */
-.latest-articles-text:hover {
-   color: #e28a2b;
-}  
 
 /* footer */
 footer {
     text-align: center;
     padding:20px;
     margin-top: 20px;
-    border-top: solid white;
+    border-top: solid #ffffff;
     display: grid;
     grid-template-areas: 
     'subscribe column-2 column-3 column-4'
@@ -266,11 +277,11 @@ footer {
 #subscribe-parent {
     grid-area: subscribe;
 }
-/* check for duplicate with other text areas */
+
 #email-text-area {
     width: 35%;
     margin-bottom: 10px;
-    border: solid white 5px;
+    border: solid #ffffff 5px;
     font-size: 15px;
 }
 
@@ -292,16 +303,11 @@ footer {
     grid-area: column-4;
 }
 
-.footer-link:hover, #footer-nav a:hover {
-    color: #e28a2b;
-    font-weight: bold;
-}
-
 #footer-nav {
     grid-area: footer-nav;
     padding: 10px 5px;
-    border-top: solid white 3px;
-    border-bottom: solid white 1px;
+    border-top: solid #ffffff 3px;
+    border-bottom: solid #ffffff 1px;
 }
 
 #footer-nav a {
@@ -340,7 +346,7 @@ footer {
     }
     
     #nav-bar {
-        background-color: black;
+        background-color: #000000;
     }
 
     #nav-bar a {
@@ -354,13 +360,13 @@ footer {
     }
 
     #search-input {
-        background-color: white;
+        background-color: #ffffff;
     }
 
     /* side */
     #side-image {
         margin-top: 10px;
-        border-top: solid thin white;
+        border-top: solid thin #ffffff;
     }
 
     #main-parent {
@@ -387,7 +393,7 @@ footer {
     #footer-nav {
         margin-top: 10px;
         padding: 10px 5px;
-        border-top: solid white 1px;
+        border-top: solid #ffffff 1px;
     }
 
     #footer-nav a{
@@ -415,7 +421,7 @@ footer {
 
    footer h3 {
     font-size: 15px;
-    text-decoration: underline white;
+    text-decoration: underline #ffffff;
    }
 } 
 

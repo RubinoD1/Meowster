@@ -3,21 +3,37 @@
 
 Live Page: 
 
-GitHub Repo: 
+GitHub Repo: https://github.com/RubinoD1/Meowster
 
 ## What is Meowster? 
 
 Meowster is a news blog template that make use of CSS grid layout. 
 
+
 ## Screenshots
-    Desktop Layout
+<div align="center">
+Desktop Layout
+</div>
+<br>
+
 ![Desktop](./assets/images/screenshots/Desktop-1.png)
+
 ![Desktop](./assets/images/screenshots/Desktop-2.png)
+
+<div align="center">
+Tablet Layout
+</div>
+<br>
     
-    Tablet Layout
 ![Tablet](./assets/images/screenshots/Tablet-1.png)
+
 ![Tablet](./assets/images/screenshots/Tablet-2.png)
-    
-    Phone Layout
+
+<div align="center">
+Phone Layout
+</div>
+<br>
+   
 ![Phone](./assets/images/screenshots/Phone-1.png)
+
 ![Phone](./assets/images/screenshots/Phone-2.png)
